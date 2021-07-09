@@ -5,9 +5,14 @@ Red='\033[0;31m'
 Green='\033[0;32m'
 Color_Off='\033[0m'
 
+export ORDERER_IMAGE_TAG=2.2.3
+export PEER_IMAGE_TAG=2.2.3
+export CLI_IMAGE_TAG=2.2.3
+export COUCHDB_IMAGE_TAG=3.1.1
+
 # Print the usage message
 function printHelp() {
-    echo -e "${Green}"
+    echo -e "${Green}"  
     echo "Usage: "
     echo "  networkUp.sh <chaincodePath>"
     echo -e "${Red}"
